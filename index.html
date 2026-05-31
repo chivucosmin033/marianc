@@ -144,8 +144,8 @@
       position: relative;
       border-radius: 16px;
       overflow: hidden;
-      aspect-ratio: 4 / 3;
-      min-height: clamp(420px, 42vw, 560px);
+      aspect-ratio: 1164 / 1351;
+      min-height: 0;
       background: var(--bg-card);
       border: 1px solid rgba(255,255,255,0.08);
       box-shadow: 0 28px 80px rgba(0,0,0,0.45);
@@ -194,7 +194,7 @@
       .trust-strip { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 520px) {
-      .hero-image { aspect-ratio: 4 / 3; }
+      .hero-image { aspect-ratio: 1164 / 1351; }
       .hero-actions .btn { width: 100%; justify-content: center; }
       .trust-strip { grid-template-columns: 1fr; }
     }
@@ -229,7 +229,7 @@
       gap: 4rem; align-items: center;
     }
     .about-image {
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 1164 / 1351;
       background: var(--bg-card);
       border-radius: 16px;
       overflow: hidden;
@@ -260,7 +260,7 @@
     }
     @media (max-width: 768px) {
       .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-      .about-image { aspect-ratio: 4 / 3; }
+      .about-image { aspect-ratio: 1164 / 1351; }
     }
 
     /* ===== SERVICES / CARDS ===== */
@@ -385,6 +385,273 @@
     .social-links a:hover { color: var(--accent); }
     @media (max-width: 640px) {
       footer .container { flex-direction: column; gap: 1rem; text-align: center; }
+    }
+
+    /* ===== MOBILE POLISH ===== */
+    @media (max-width: 640px) {
+      html { scroll-padding-top: 74px; }
+
+      .container {
+        padding: 0 1rem;
+      }
+
+      section {
+        padding: 3.25rem 0;
+      }
+
+      h1 {
+        font-size: 2.35rem;
+        line-height: 1.08;
+      }
+
+      h2 {
+        font-size: 1.85rem;
+        line-height: 1.15;
+      }
+
+      h3 {
+        font-size: 1.12rem;
+      }
+
+      .section-header {
+        margin-bottom: 2rem;
+      }
+
+      .section-tag {
+        font-size: 0.68rem;
+        letter-spacing: 0.12em;
+      }
+
+      .navbar {
+        padding: 0.85rem 0;
+      }
+
+      .navbar .logo {
+        font-size: 1.18rem;
+      }
+
+      .nav-toggle {
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .nav-links {
+        padding: 0.35rem 0;
+      }
+
+      .nav-links a {
+        padding: 0.9rem 1rem;
+        font-size: 0.95rem;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 5.4rem;
+        padding-bottom: 3rem;
+        align-items: flex-start;
+      }
+
+      .hero::before {
+        width: 100%;
+        height: 55%;
+        top: 8%;
+        right: -45%;
+      }
+
+      .hero-grid {
+        gap: 1.6rem;
+      }
+
+      .hero-content {
+        max-width: none;
+      }
+
+      .hero h1 {
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.4rem;
+      }
+
+      .hero-actions {
+        gap: 0.75rem;
+      }
+
+      .btn {
+        min-height: 48px;
+        padding: 0.82rem 1rem;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+
+      .hero-actions .btn svg {
+        flex: 0 0 auto;
+      }
+
+      .trust-strip {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1.4rem;
+        border-radius: 10px;
+      }
+
+      .trust-item {
+        padding: 0.85rem;
+      }
+
+      .trust-item strong {
+        font-size: 0.86rem;
+      }
+
+      .trust-item span {
+        font-size: 0.72rem;
+        line-height: 1.35;
+      }
+
+      .hero-image {
+        width: min(100%, 420px);
+        margin: 0 auto;
+        border-radius: 12px;
+        box-shadow: 0 18px 48px rgba(0,0,0,0.38);
+      }
+
+      .hero-badge {
+        left: 0.75rem;
+        right: 0.75rem;
+        bottom: 0.75rem;
+        max-width: none;
+        padding: 0.78rem 0.85rem;
+        border-radius: 10px;
+      }
+
+      .hero-badge strong {
+        font-size: 0.84rem;
+      }
+
+      .hero-badge span {
+        font-size: 0.7rem;
+        line-height: 1.35;
+      }
+
+      .about-grid {
+        gap: 1.8rem;
+      }
+
+      .about-image {
+        width: min(100%, 420px);
+        margin: 0 auto;
+        border-radius: 12px;
+      }
+
+      .about-text h2 {
+        text-align: left;
+        margin-bottom: 0.9rem;
+      }
+
+      .about-text p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+        margin-bottom: 1rem;
+      }
+
+      .about-text .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        margin-top: 1.4rem;
+        padding-top: 1.4rem;
+      }
+
+      .stats .stat-num {
+        font-size: 1.35rem;
+      }
+
+      .stats .stat-label {
+        font-size: 0.65rem;
+        line-height: 1.25;
+      }
+
+      .services-grid,
+      .testimonials-grid {
+        gap: 1rem;
+      }
+
+      .service-card,
+      .testimonial-card {
+        border-radius: 12px;
+        padding: 1.35rem;
+      }
+
+      .service-card .icon {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 1rem;
+      }
+
+      .service-card p,
+      .testimonial-card blockquote {
+        font-size: 0.9rem;
+      }
+
+      .service-card .price {
+        font-size: 1.28rem;
+      }
+
+      .service-card .btn-outline {
+        width: 100%;
+        justify-content: center;
+        align-self: stretch;
+      }
+
+      .contact-wrapper {
+        max-width: none;
+      }
+
+      .form-group {
+        margin-bottom: 1rem;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        min-height: 48px;
+        font-size: 1rem;
+        padding: 0.82rem 0.9rem;
+      }
+
+      .form-group textarea {
+        min-height: 132px;
+      }
+
+      footer {
+        padding: 2rem 0 2.4rem;
+      }
+
+      .social-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.85rem 1rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      h1 { font-size: 2.05rem; }
+      h2 { font-size: 1.65rem; }
+
+      .trust-strip,
+      .about-text .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-badge {
+        position: static;
+        margin: 0.75rem;
+      }
     }
 
     /* ===== SCROLLBAR ===== */
